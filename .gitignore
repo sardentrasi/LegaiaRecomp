@@ -8,6 +8,11 @@
 /.happypath/
 /toolchain/
 
+# AI Context Loader (keep local, do not push to public GitHub)
+ai-context-loader.md
+AI-CONTEXT-LOADER.md
+
+
 # generated/ is COMMITTED: releases ship the compiled game, and CI builds it
 # from the game C in this repo (psxrecomp_cli.py generate, then git add
 # generated). Never ignore it. Only the framework submodule's own generated/

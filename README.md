@@ -1,104 +1,187 @@
-# Legaia Recompiled
+# 🗡️ Legend of Legaia Recompiled (LegaiaRecomp)
 
-<!-- retcomm-readme-metrics -->
-[![GitHub downloads (all assets, all releases)](https://img.shields.io/github/downloads/RetroPortingToolKit/LegaiaRecomp/total)](https://github.com/RetroPortingToolKit/LegaiaRecomp/releases)
-[![GitHub downloads (latest release)](https://img.shields.io/github/downloads/RetroPortingToolKit/LegaiaRecomp/latest/total)](https://github.com/RetroPortingToolKit/LegaiaRecomp/releases/latest)
-[![GitHub release](https://img.shields.io/github/v/release/RetroPortingToolKit/LegaiaRecomp)](https://github.com/RetroPortingToolKit/LegaiaRecomp/releases/latest)
-<!-- /retcomm-readme-metrics -->
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-blue.svg)](https://github.com/sardentrasi/LegaiaRecomp)
+[![Recompilation](https://img.shields.io/badge/Recomp-psxrecomp%20AOT-brightgreen.svg)](https://github.com/RetroPortingToolKit/psxrecomp)
+[![Game](https://img.shields.io/badge/Game-Legend%20of%20Legaia%20(SCUS--94254)-red.svg)](https://en.wikipedia.org/wiki/Legend_of_Legaia)
+[![License](https://img.shields.io/badge/License-MIT-orange.svg)](LICENSE)
 
-Static recompilation of **Legaia** built on
-[psxrecomp](https://github.com/mstan/psxrecomp) and
-[recomp-ui](https://github.com/RetroPortingToolKit/recomp-ui).
+An open-source, native PC static recompilation of the classic PlayStation 1 JRPG **Legend of Legaia** (`SCUS-94254`, NTSC-U).
 
-_Add a short pitch in catalog_identity.json / README._
+Instead of traditional emulation that interprets MIPS instructions at runtime, **LegaiaRecomp** translates the original MIPS R3000A machine code ahead-of-time (AOT) into clean, portable 64-bit C code. The resulting engine runs as a native PC executable with uncapped performance, widescreen rendering, sub-pixel polygon precision, instant loading, and a powerful native modding ecosystem.
 
-| | |
-|---|---|
-| Players | 1 |
-| Region | USA |
-| Publisher | — |
-| Year | — |
-
-Scaffolded with the New Project Layout. See
-`psxrecomp/docs/GAME_PROJECT_SETUP.md` for the full flow.
-
-<!-- retcomm-readme-launcher -->
-## Retro Launcher
-
-You can run this title **standalone** (download the release zip, point it at
-your disc, play), or manage installs, updates, and disc/BIOS wiring with
-**[Retro Launcher](https://github.com/RetroPortingToolKit/Retro-Launcher)** —
-the Retro Compilation Manager hub for self-compiling recomps.
-
-[Downloads](https://github.com/RetroPortingToolKit/Retro-Launcher/releases) ·
-[Full README & features](https://github.com/RetroPortingToolKit/Retro-Launcher#readme)
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/RetroPortingToolKit/Retro-Launcher/main/docs/screenshots/hub-and-game-launcher.png" alt="Retro hub with a background build, next to a title’s recomp-ui launcher" width="720">
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/RetroPortingToolKit/Retro-Launcher/main/docs/screenshots/queue-and-background-build.png" alt="Background cmake build with titles queued" width="720">
-</p>
-
-Retro checks for updates, installs the prebuilt release zips, and automates
-BIOS/ROM/save plumbing so you are not stuck repeating each game’s first run by hand.
-<!-- /retcomm-readme-launcher -->
-
-## Legal
-
-You must own the original game. Disc images under `disc/` are gitignored and
-must never be committed. Retail BIOS dumps are not redistributed and no C
-derived from one may be committed; releases run on the bundled MIT OpenBIOS.
-
-`generated/` (the recompiled game C) **is committed**: releases ship the
-compiled game, built by CI from that tree. Regenerate and commit it whenever
-seeds or the framework pin change.
-
-Default app icon: `assets/psxrecomp.ico` (and `.png` / `.svg`) — Retro-themed controller mark from `psxrecomp/assets/`. Windows builds embed it via `APP_ICON`.
-
-Optional box art under `launcher_assets/img/` may come from
-[libretro-thumbnails](https://github.com/libretro-thumbnails/libretro-thumbnails)
-(`Named_Boxarts`); see `BOXART_SOURCE.txt` when present.
-
-## Quick start (dev)
-
-```bash
-git submodule update --init --recursive
-./psxrecomp/tools/ci/build_emitters.sh
-python3 psxrecomp/psxrecomp_cli.py generate \
-  --config game.toml --project-root . --disc disc/<your>.cue
-git add generated && git commit -m "Regenerate game C"
-cmake -S . -B build-release -G Ninja -DCMAKE_BUILD_TYPE=Release
-cmake --build build-release --target psx-runtime
-```
-
-Releases: tag `vX.Y.Z` (or run the *Release builds* workflow). CI builds the
-committed `generated/` C on Linux, Windows and macOS and attaches
-`legaia-<version>-<platform>.zip`, the compiled game. Locally:
-`scripts/package_release.sh build-release linux-x64`.
-
-## Symbols
-
-Progressive map: `symbols.toml` → `python3 tools/sync_symbols.py` →
-`psx_symbols.h` (`PSX_FN_*`). See `psxrecomp/docs/SYMBOLS.md`.
-
-## Framework pins
-
-Submodule gitlinks (`psxrecomp`, optional `recomp-ui`, nested `recomp-net`)
-are authoritative. `framework_pins.txt` is an optional scaffold snapshot;
-release CI logs SHAs with `record_pins.sh` but builds whatever the gitlinks
-resolve to. Bump submodules deliberately — do not float on `main`/`master`
-in release CI.
-
-<!-- retcomm-readme-raid -->
 ---
 
-<p align="center">
-  <sub><b>R.A.I.D. — Retro AI Development</b> · a Discord for AI-assisted retro reverse-engineering, decomp &amp; recomp</sub>
-</p>
+## ✨ Features & Enhancements
 
-<p align="center">
-  <a href="https://discord.gg/Ad9BwSzctP"><img src=".github/raid-discord.png" alt="Join the Retro AI Development (R.A.I.D.) Discord" width="200"></a>
-</p>
-<!-- /retcomm-readme-raid -->
+- 🚀 **High Framerate Rendering:** Uncapped 60 FPS / 120 FPS+ combat and exploration.
+- 🌟 **PGXP Geometry Correction:** Eliminates the iconic PS1 polygon jitter, vertex snapping, and affine texture warping for razor-sharp 3D models.
+- 🖥️ **True Widescreen & Ultrawide:** Native 16:9, 21:9, and 32:9 rendering without stretching HUD or character proportions.
+- ⚡ **Instantaneous Load Times:** Seamless transitions between the world map, towns, and tactical combat encounters.
+- 🎮 **Modern Controller & Audio:** Full gamepad vibration and analog stick support via SDL3, paired with OpenAL 3D spatial sound and SPU voice mixing.
+- ⚔️ **Native Modding Architecture (`.psxmod`):** Modular mod loading with zero modification to your original game disc.
+- 🌐 **Dynamic Localization Engine (`text_xlate`):** On-the-fly string translation using 64-bit FNV-1a hash tables, freeing translations from legacy PS1 byte budgets.
+
+---
+
+## 🎁 Bundled / Preloaded Mods
+
+LegaiaRecomp comes out-of-the-box with two showcase mods:
+
+### 1. ⚔️ Vahn Blazing Slash Super Art (`legaia.vahn.blazingslash`)
+- **What it does:** Transfers Gi Delilah's iconic cinematic attack (**Spell `0x79` / PROT 0958**) directly to **Vahn**!
+- **Features:** 
+  - Complete 6-stage battle cinematic: dynamic camera swing, high-speed dash, 4-hit mid-air fiery slashes, ground shockwave eruption, and recovery sheath.
+  - Fully bound to Vahn's 3D hero model, weapon bone hierarchy, and custom flame particle VFX.
+  - No disc hacking required: loaded seamlessly as a sparse CD-ROM sector overlay.
+
+### 2. 🇮🇩 Indonesian Localization Pack (`legaia.localization.indonesian`)
+- **What it does:** Complete Bahasa Indonesia translation covering in-game dialogue, story cutscenes, menu systems, items, and battle interfaces.
+- **Features:**
+  - High-quality literary translation tuned to each character's unique voice (Vahn, Noa, Gala, Meta, Terra, Ozma).
+  - Uses dynamic `text_xlate` to render natural phrasing without awkward abbreviations.
+
+---
+
+## 🚀 Quick Start (How to Play)
+
+### Prerequisites
+1. You must legally own an original retail copy of *Legend of Legaia* (USA, `SCUS-94254`).
+2. Dump your disc into `.bin` / `.cue` format using your favorite disc dumping tool (e.g. ImgBurn, MPF).
+
+### Running the Game
+1. Clone or download this repository:
+   ```bash
+   git clone --recursive https://github.com/sardentrasi/LegaiaRecomp.git
+   cd LegaiaRecomp
+   ```
+2. Place your disc dump in the `disc/` folder:
+   - `disc/Legend of Legaia (USA).cue`
+   - `disc/Legend of Legaia (USA).bin`
+3. Build or download the latest release executable (see [Building](#-building-the-project)).
+4. Launch `Legaia_Recompiled.exe` (Windows) or `./Legaia_Recompiled` (Linux).
+5. Enjoy *Legend of Legaia* natively on your PC!
+
+---
+
+## 🔨 Building the Project
+
+The recompiled C code (`generated/`) is already committed to this repository. You **do not** need Python or specialized decompilation tools to build the game—only standard C/C++ build tools!
+
+### 🪟 Windows (Visual Studio 2022 / MinGW)
+
+We provide an automated, one-click Windows build script:
+
+1. Open **Command Prompt** or **PowerShell** in the `LegaiaRecomp` directory.
+2. Run:
+   ```cmd
+   build_windows.bat
+   ```
+3. The script will automatically detect Visual Studio 2022, configure CMake, build with MSVC, stage required assets, and produce `build-release\Legaia_Recompiled.exe`.
+
+> For advanced Windows build options, see [BUILD_WINDOWS.md](BUILD_WINDOWS.md).
+
+### 🐧 Linux (Ubuntu / Debian / Fedora / Arch)
+
+1. Install dependencies:
+   ```bash
+   # Ubuntu / Debian:
+   sudo apt update
+   sudo apt install -y build-essential cmake ninja-build libsdl3-dev libopenal-dev libgl1-mesa-dev
+   
+   # Arch Linux:
+   sudo pacman -S base-devel cmake ninja sdl3 openal mesa
+   ```
+2. Configure and build:
+   ```bash
+   cmake -S . -B build-release -G Ninja -DCMAKE_BUILD_TYPE=Release
+   cmake --build build-release --target psx-runtime
+   ```
+3. Run:
+   ```bash
+   ./build-release/Legaia_Recompiled
+   ```
+
+---
+
+## 🧩 Community Modding Guide
+
+LegaiaRecomp is built from the ground up for modders. Anyone can create new arts, balance tweaks, custom textures, or translations without touching the base game code!
+
+### Mod Directory Anatomy
+Mods are placed in `mods/packages/<your_mod_id>/<version>/`:
+```text
+mods/packages/my_custom_art/1.0.0/
+├── manifest.toml            # Mod metadata, priority, and sector mappings
+└── assets/                  # Sparse replacement chunks (optional)
+```
+
+### Creating `manifest.toml`
+```toml
+format_version = 7
+
+[package]
+id = "my_custom_mod"
+name = "My Awesome Legaia Mod"
+version = "1.0.0"
+author = "YourHandle"
+description = "Adds new custom Tactical Arts and combat rebalances."
+priority = 50
+
+[target]
+serial = "SCUS-94254"
+edition = "recomp"
+
+# Optional: replace specific CD-ROM sectors on-the-fly
+[[runs]]
+sector_offset = 33288
+sector_count = 1
+file = "assets/run_000.bin"
+```
+
+### Enabling / Disabling Mods
+Edit `mods/state.toml`:
+```toml
+[mods]
+"legaia.vahn.blazingslash" = true
+"legaia.localization.indonesian" = true
+"my_custom_mod" = true
+```
+
+### Adding New Language Translations
+Translations are located in `translations/` as clean TOML files:
+1. Copy `translations/legaia_id.toml` to `translations/legaia_<lang>.toml`.
+2. Translate dialogue strings while preserving escape codes (`{c1:00}` for Vahn, `|` for newline).
+3. Set your active language in `game.toml`:
+   ```toml
+   [localization]
+   enabled = true
+   language = "es"
+   path = "translations/legaia_es.toml"
+   ```
+
+---
+
+## 🤝 Contributing
+
+Contributions from the community are warmly welcome! Here are ways you can help:
+- 🎨 **Visual Mods:** Create HD texture packs, UI remasters, or custom character skins.
+- ⚔️ **Combat Mods:** Design new Tactical Arts, boss mechanics, or balance overhauls.
+- 🌍 **Translations:** Help localize *Legend of Legaia* into Spanish, French, German, Japanese, and more.
+- 💻 **Engine Improvements:** Enhance rendering features, optimize GTE instructions, or add new platform backends.
+
+To contribute:
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/my-new-mod`).
+3. Commit your changes (`git commit -m 'Add awesome new mod'`).
+4. Push to the branch (`git push origin feature/my-new-mod`).
+5. Open a **Pull Request**.
+
+---
+
+## ⚖️ Legal & Disclaimer
+
+- *Legend of Legaia* is a registered trademark of **Sony Interactive Entertainment Inc.** / **Contrail** / **Prokion**.
+- **LegaiaRecomp** is an independent, non-profit open-source project and is **not** affiliated with, endorsed by, or sponsored by Sony or any of its subsidiaries.
+- This repository contains **NO** copyrighted game assets, proprietary ROM dumps, disc images, or retail PlayStation BIOS binaries.
+- All builds run using clean-room open-source BIOS implementations ([OpenBIOS](https://github.com/RetroPortingToolKit/openbios)).
+- Users must supply their own legally purchased disc image to play.
