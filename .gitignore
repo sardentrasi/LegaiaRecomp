@@ -31,6 +31,7 @@
 
 # Disc / image / memcard formats
 *.bin
+!mods/**/assets/*.bin
 *.cue
 *.iso
 *.img
