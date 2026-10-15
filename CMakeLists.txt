@@ -66,3 +66,22 @@ foreach(_PSX_RUNTIME_CONFIG game.toml game_options.toml)
             VERBATIM)
     endif()
 endforeach()
+
+if(IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/translations")
+    add_custom_command(TARGET psx-runtime POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_directory
+            "${CMAKE_CURRENT_SOURCE_DIR}/translations"
+            "$<TARGET_FILE_DIR:psx-runtime>/translations"
+        COMMENT "Staging translations"
+        VERBATIM)
+endif()
+
+if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/mods/state.toml")
+    add_custom_command(TARGET psx-runtime POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+            "${CMAKE_CURRENT_SOURCE_DIR}/mods/state.toml"
+            "$<TARGET_FILE_DIR:psx-runtime>/mods/state.toml"
+        COMMENT "Staging mods state.toml"
+        VERBATIM)
+endif()
+

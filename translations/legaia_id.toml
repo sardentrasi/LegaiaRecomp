@@ -1,0 +1,190 @@
+# text_xlate translation table for Legend of Legaia
+[meta]
+target_language = "id"
+source_language = "en"
+
+[[entry]]
+src_hex = "41747461636b"
+en = "Attack"
+id = "Serang"
+term = "nul"
+
+[[entry]]
+src_hex = "537069726974"
+en = "Spirit"
+id = "Semangat"
+term = "nul"
+
+[[entry]]
+src_hex = "4974656d"
+en = "Item"
+id = "Barang"
+term = "nul"
+
+[[entry]]
+src_hex = "52612d53657275"
+en = "Ra-Seru"
+id = "Ra-Seru"
+term = "nul"
+
+[[entry]]
+src_hex = "457363617065"
+en = "Escape"
+id = "Kabur"
+term = "nul"
+
+[[entry]]
+src_hex = "446566656e7365"
+en = "Defense"
+id = "Bertahan"
+term = "nul"
+
+[[entry]]
+src_hex = "48797065722041727473"
+en = "Hyper Arts"
+id = "Jurus Tingkat Tinggi"
+term = "nul"
+
+[[entry]]
+src_hex = "53757065722041727473"
+en = "Super Arts"
+id = "Jurus Khusus"
+term = "nul"
+
+[[entry]]
+src_hex = "4d697261636c652041727473"
+en = "Miracle Arts"
+id = "Jurus Keajaiban"
+term = "nul"
+
+[[entry]]
+src_hex = "426c617a696e6720536c617368"
+en = "Blazing Slash"
+id = "Tebasan Membara"
+term = "nul"
+
+[[entry]]
+src_hex = "4275726e696e6720466c617265"
+en = "Burning Flare"
+id = "Tebasan Membara"
+term = "nul"
+
+[[entry]]
+src_hex = "4669726520426c6f77"
+en = "Fire Blow"
+id = "Pukulan Api"
+term = "nul"
+
+[[entry]]
+src_hex = "546f726e61646f20466c616d65"
+en = "Tornado Flame"
+id = "Pusaran Api"
+term = "nul"
+
+[[entry]]
+src_hex = "506f7765722050756e6368"
+en = "Power Punch"
+id = "Pukulan Bertenaga"
+term = "nul"
+
+[[entry]]
+src_hex = "5370696e6e696e67204561727468"
+en = "Spinning Earth"
+id = "Putaran Bumi"
+term = "nul"
+
+[[entry]]
+src_hex = "4269726f6e2052616765"
+en = "Biron Rage"
+id = "Kemurkaan Biron"
+term = "nul"
+
+[[entry]]
+src_hex = "537461747573"
+en = "Status"
+id = "Status"
+term = "nul"
+
+[[entry]]
+src_hex = "4571756970"
+en = "Equip"
+id = "Perlengkapan"
+term = "nul"
+
+[[entry]]
+src_hex = "4d61676963"
+en = "Magic"
+id = "Sihir"
+term = "nul"
+
+[[entry]]
+src_hex = "436f6e666967"
+en = "Config"
+id = "Pengaturan"
+term = "nul"
+
+[[entry]]
+src_hex = "53617665"
+en = "Save"
+id = "Simpan"
+term = "nul"
+
+[[entry]]
+src_hex = "4c6f6164"
+en = "Load"
+id = "Muat"
+term = "nul"
+
+[[entry]]
+src_hex = "476f6c64"
+en = "Gold"
+id = "Koin Emas"
+term = "nul"
+
+[[entry]]
+src_hex = "4c6576656c"
+en = "Level"
+id = "Tingkat"
+term = "nul"
+
+[[entry]]
+src_hex = "457870657269656e6365"
+en = "Experience"
+id = "Pengalaman"
+term = "nul"
+
+[[entry]]
+src_hex = "4e657874204c6576656c"
+en = "Next Level"
+id = "Tingkat Berikutnya"
+term = "nul"
+
+[[entry]]
+src_hex = "4850"
+en = "HP"
+id = "HP"
+term = "nul"
+
+[[entry]]
+src_hex = "4d50"
+en = "MP"
+id = "MP"
+term = "nul"
+
+[[entry]]
+src_hex = "4150"
+en = "AP"
+id = "AP"
+term = "nul"
+
+[[entry]]
+src_hex = "466972652064616d61676520746f2073696e676c6520656e656d79"
+en = "Fire damage to single enemy"
+id = "Serangan elemen api ke satu musuh"
+term = "nul"
+
+[[entry]]
+src_hex = "436f6e74696e756f7573206d756c74692d6869742061657269616c20736c617368"
+en = "Continuous multi-hit aerial slash"
+id = "Tebasan beruntun di udara"
+term = "nul"

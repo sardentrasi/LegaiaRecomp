@@ -1,0 +1,648 @@
+format_version = 7
+id = "legaia.localization.indonesian"
+version = "1.0.0"
+name = "Bahasa Indonesia Translation"
+author = "Legaia Indonesian Translation Team"
+description = "Terjemahan Bahasa Indonesia untuk Legend of Legaia (dialog, teks cerita, menu, nama jurus, dan perlengkapan)."
+license = "MIT"
+resolver = "declarative"
+
+[[target]]
+game_id = "SCUS-94254"
+disc_sha256 = "e6120a5d70716dd2f026a2da32d0171d52651971b52c4347a68541299f75258c"
+
+[[feature]]
+id = "indonesian-language"
+name = "Bahasa Indonesia"
+description = "Mengaktifkan terjemahan penuh bahasa Indonesia."
+default_enabled = true
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 1317120
+file = "assets/run_000_lba_560.bin"
+sha256 = "c4cc5bc379e605f996ef7742cfd21c7859bf195bf6be5c64a8e9a7d28de9b812"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 2467248
+file = "assets/run_001_lba_1049.bin"
+sha256 = "30b8e5d097164d332f18666fc4bf20146e57f9eee07432a355a5c5e916a2924e"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 3612672
+file = "assets/run_002_lba_1536.bin"
+sha256 = "536c40e18d151c8cf9f3c51f01d8f0d3d3e3390f736da56e1391ba0a3f1f3c42"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 4743984
+file = "assets/run_003_lba_2017.bin"
+sha256 = "d841536e769336b24c01cb27f787feb246d741b4b503eb609e325eef1af620a6"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 5141472
+file = "assets/run_004_lba_2186.bin"
+sha256 = "93eb49040f46c330710ca649b496f05fe72953795f1cad66a540d9931326f2c1"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 5600112
+file = "assets/run_005_lba_2381.bin"
+sha256 = "48f671a1145e10d50d23240f038b5d5890a19aa04f5a6634a0f716d6036e2b28"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 6105792
+file = "assets/run_006_lba_2596.bin"
+sha256 = "8f3dd99db1ac3f15c10db9ced35eb6988551a2420c6b1fd1c648b66cc8ebee0e"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 6841968
+file = "assets/run_007_lba_2909.bin"
+sha256 = "2cbbba159a18e6d06c48f08021e505fc2c17269acbe1c427c5e81e0c80a52f8e"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 7505232
+file = "assets/run_008_lba_3191.bin"
+sha256 = "c809844ac86bc45d079d268085b5f7c27e65784b5dd27f25d52a8a0afd04d94f"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 8088528
+file = "assets/run_009_lba_3439.bin"
+sha256 = "4c3bec22ff774f41d9c6ad58a109c67df06bc7ec79e5cb178dbb0412d63bc407"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 8568336
+file = "assets/run_010_lba_3643.bin"
+sha256 = "8d94337fb2f0853ded0c6d6158f8d19e11ec8d694965fe05d5e4ebbe1e8ada1a"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 9266880
+file = "assets/run_011_lba_3940.bin"
+sha256 = "dfcda7b35596728d52e34f1b3fa27a363a673125ee66ea88ebb30783fcb6bc81"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 9934848
+file = "assets/run_012_lba_4224.bin"
+sha256 = "6d9a9ee3ad5a8714513b3ec1e484cbe9ccb6ab58356660165081b5bb9d898423"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 10358208
+file = "assets/run_013_lba_4404.bin"
+sha256 = "cdb616ceb355696a27c065c01914d78d8b69bb2606259bf378ebfc2a813f04e3"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 10892112
+file = "assets/run_014_lba_4631.bin"
+sha256 = "cc38e10b49c3ce42121fbcf6e6c78b14ebc609caebf071a7ccf761cb1a80082f"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 11409552
+file = "assets/run_015_lba_4851.bin"
+sha256 = "95621d93f8e55703bb8ad5c72616c5a203213951808f21a73b2fb5b7759e7d41"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 11696496
+file = "assets/run_016_lba_4973.bin"
+sha256 = "e7dea704a275348e0056666641947587a0852ed1ec0e6444c96aecc3be6772b0"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 12369168
+file = "assets/run_017_lba_5259.bin"
+sha256 = "d16efc59c2de038cd9c24d0005b2b2a0039f5f3153357f4b8d4805b59c4e550b"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 13230000
+file = "assets/run_018_lba_5625.bin"
+sha256 = "2d43640841cc9c5b7369a5bc74216bad936e6e16aea5eafc5e5c99a560c2e15d"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 14314272
+file = "assets/run_019_lba_6086.bin"
+sha256 = "86f202c8dbd277a73b51616d515eec956666932d4cd8b38826d77d6b6d49ca8e"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 14869344
+file = "assets/run_020_lba_6322.bin"
+sha256 = "f1bf56ef01155928bf984017f9d17379ce3409ce8b797f4cf9f08b60538b75cc"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 15530256
+file = "assets/run_021_lba_6603.bin"
+sha256 = "28f49b7487fb26b2bf9bb21b71c532043a29e97ec8d415ea0399dcc4ee30c048"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 16440480
+file = "assets/run_022_lba_6990.bin"
+sha256 = "1419e0c9ac9f0af627b0ffd3fdc7d74f5f5413d47d7c69d32d7b454e8439ed74"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 17562384
+file = "assets/run_023_lba_7467.bin"
+sha256 = "0e3e9ada8506765418307f210548b978fe5a4ee8556ef26b067aba208a525f28"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 18317376
+file = "assets/run_024_lba_7788.bin"
+sha256 = "9b4bb70a182493167972a21bd119f6c943205112eab9eba0ede3309a55869624"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 19465152
+file = "assets/run_025_lba_8276.bin"
+sha256 = "1ed29394035f4d6a0adb31e0650a573483a73ea2a3885629be1e0d6d465e9e7d"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 20151936
+file = "assets/run_026_lba_8568.bin"
+sha256 = "f8e4b817462510b368f893df675f842d9b91e7960d04e265e1fa7c1a7fa60ecd"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 20723472
+file = "assets/run_027_lba_8811.bin"
+sha256 = "058897685dbc4ba2931da90f1774b8a1e9462b582e21484b5d6b0860c409d672"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 21111552
+file = "assets/run_028_lba_8976.bin"
+sha256 = "862e0219517126ee853e61e616536842ddebfeafcb228934d62954f344f459e5"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 21598416
+file = "assets/run_029_lba_9183.bin"
+sha256 = "3484346a77246a4c070062a1a2c8a0a4cc20b06b80ea5bfe0cc67777c096e436"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 21930048
+file = "assets/run_030_lba_9324.bin"
+sha256 = "3e48b4258f9f9d4d07497a14c5a0ec52bd5f567098e8b19ce3ccca2a2db8a2c9"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 22920240
+file = "assets/run_031_lba_9745.bin"
+sha256 = "bcf3c29bba000cfee46a4bac2ffae9b46a21fec295ad44dee68ba59ed27521ba"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 23360064
+file = "assets/run_032_lba_9932.bin"
+sha256 = "da310fdbc4cc70c2094e0d9e4dd80cbdf590ca6d6fbbf78d78c197e9d06cfed0"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 24561936
+file = "assets/run_033_lba_10443.bin"
+sha256 = "ee3864c03ca82b3c5543246b047331f2b2de89f8c8d77286fd391a50142d1cd6"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 25234608
+file = "assets/run_034_lba_10729.bin"
+sha256 = "c3fce27f928af3eeb36209b0393aec11751650955b5e305e62bba815a9fa5093"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 25756752
+file = "assets/run_035_lba_10951.bin"
+sha256 = "f22287586c6f5e59cb3706eae4305ab0369654664fd7773edc80c7781ce80462"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 26728128
+file = "assets/run_036_lba_11364.bin"
+sha256 = "2318ae1faecaebeaaa6400b5783070f23ebf8dd9b12e39489be201b05475f1f0"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 26732832
+file = "assets/run_037_lba_11366.bin"
+sha256 = "c91c1944e0b419e8f1c19cca7d2ed7a7fa7bced5c6ac7dd158fb550c17513234"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 27518400
+file = "assets/run_038_lba_11700.bin"
+sha256 = "718f4a09b77bcf223e8d1130b6c898e5d8802b83eec4de77a73020a34c6e23c8"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 28268688
+file = "assets/run_039_lba_12019.bin"
+sha256 = "f5b87a935e728c3cf14687dfe4a7af81e2a547574a88aa405df009262cbc1d00"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 29141280
+file = "assets/run_040_lba_12390.bin"
+sha256 = "5a24627d8791db512557fd9297bbfcbcf1eb02a8083677608b1590a4b7e3e40d"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 30105600
+file = "assets/run_041_lba_12800.bin"
+sha256 = "b22af29a042d2de42db822940ee876b78969710b4a15d537c0b3de9f0b78bec9"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 30573648
+file = "assets/run_042_lba_12999.bin"
+sha256 = "d160fedb780870a1bb148b15ea1ee4c95d59008fb9ceabd49cdecb0ff7b173fa"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 31662624
+file = "assets/run_043_lba_13462.bin"
+sha256 = "101a5eb4938826e84f4ba2ffc1e766db054249958ee8133ac3eb81dcd333e399"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 32824512
+file = "assets/run_044_lba_13956.bin"
+sha256 = "ef059dfdf9ca55c2020ce79dffe06096032fdb2911dfe697e96c427fefe46acb"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 33657120
+file = "assets/run_045_lba_14310.bin"
+sha256 = "c5c09694e74ff273190ab35fb9069933c4b66764e542e91b90f1ada0e0d103e4"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 34289808
+file = "assets/run_046_lba_14579.bin"
+sha256 = "ec423499774dd322e92224e895b206e9e819601619a6c301b98fd469bc3677c2"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 35940912
+file = "assets/run_047_lba_15281.bin"
+sha256 = "21b1da99cc75017401548be828ee37f79610506a9cf9c6b4c07d6a7dda349539"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 36460704
+file = "assets/run_048_lba_15502.bin"
+sha256 = "a9ea0096b956bfbeadc47a6bd8558beeb0d8e265251044b10dae8c3ee1389117"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 36484224
+file = "assets/run_049_lba_15512.bin"
+sha256 = "916a72ef3867a18be4b20580cca63fd3f32983bfb1436a0df8fb9ff8dd67cfbe"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 36964032
+file = "assets/run_050_lba_15716.bin"
+sha256 = "08916e3626bbdcb10fbd61545e9e05eb9eeff5977b012667cbc5c6ded83fe5a6"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 37396800
+file = "assets/run_051_lba_15900.bin"
+sha256 = "efd23be1f1df95e52f35f3335d8032f65b33085c4b83764062a292f058a72539"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 38027136
+file = "assets/run_052_lba_16168.bin"
+sha256 = "98fc7ffbfb4e142397bf7d4ce99e9e951745b9ba312652277ee9f5433b92e92d"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 38749200
+file = "assets/run_053_lba_16475.bin"
+sha256 = "1c8f1bcf21b01e723d37e0731a4ef4f900d5905a67176b3ea1c3ab38e37695a2"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 39720576
+file = "assets/run_054_lba_16888.bin"
+sha256 = "908a844d8c3e1f3d666a0093b3fc932907d8f884be64d5763621ea1dc9c981e2"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 40395600
+file = "assets/run_055_lba_17175.bin"
+sha256 = "7b05ab8beae4a7b07c84e36f3d57a94897b7900de157b7363e294e14d7b7c145"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 40967136
+file = "assets/run_056_lba_17418.bin"
+sha256 = "7ced918965ee44c3aa1f288d1eb2fc1602301e54c7cb17d7a7c60775d7e7faf0"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 41461056
+file = "assets/run_057_lba_17628.bin"
+sha256 = "b528d90f04d735420764c1ba15f0151075bd0d990f7fb8142a6f773ba2d80980"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 41954976
+file = "assets/run_058_lba_17838.bin"
+sha256 = "0371797b482d643e93ff14e830430622c1282ab295afe096ad9aabfeb1ef2844"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 42415968
+file = "assets/run_059_lba_18034.bin"
+sha256 = "b540d94e2a3e5d47acc212dc4422604eea7282b2546f27f79b2d57f2bc719094"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 42933408
+file = "assets/run_060_lba_18254.bin"
+sha256 = "9e5259538fcb0ad7b402580a816f683540ff71ac3405083b1ab16c3f6efd57da"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 43544928
+file = "assets/run_061_lba_18514.bin"
+sha256 = "42a6f188ae78c5e21c9c43517f2f63c957e73f8476992d885e850e67dc4852f0"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 44109408
+file = "assets/run_062_lba_18754.bin"
+sha256 = "970161597fc9e52f45b9a64f64e9e50ac0dfd9364e1ae81aac89bbec4a00d96a"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 44652720
+file = "assets/run_063_lba_18985.bin"
+sha256 = "46eb5aa137b6cd1ee4ddfc426645cc542006eddb8891deaecd2e2518992d40c0"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 45226608
+file = "assets/run_064_lba_19229.bin"
+sha256 = "e5db42abbc7da0c54efbda5fc65f71219204df0e438a70807c88e9bbe1dc35a3"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 45680544
+file = "assets/run_065_lba_19422.bin"
+sha256 = "0304f31de663467f3aa1991209529b6c6697f15aa1b310662e77851400f497d3"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 46068624
+file = "assets/run_066_lba_19587.bin"
+sha256 = "83a285e916037de9b2d5431c11178630c3f74f119fa32fd6759c11de7d2bb7f0"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 46463760
+file = "assets/run_067_lba_19755.bin"
+sha256 = "6c96dce7fe36540d6dd321b030a8c01e7a1f8634ee3b3c58863caf9fd19ae0a4"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 46924752
+file = "assets/run_068_lba_19951.bin"
+sha256 = "bc6431bfd399245fd30921d4b351211c3d59e978cb0475807b0b562d118ed927"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 47442192
+file = "assets/run_069_lba_20171.bin"
+sha256 = "eb5d8b0ca1af1fedfb65c2c96ce36a174b3adbbea9133ec5cc25f41926af1d41"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 48470016
+file = "assets/run_070_lba_20608.bin"
+sha256 = "95fe4541d2f9d98e89a18b3dbf49d888781ca08773f2e7d5220cc593cde1db2f"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 48876912
+file = "assets/run_071_lba_20781.bin"
+sha256 = "03c424c9b99eb4f4f3ad5a5dd186473642dea9622edf7b1a27d43468f0795faa"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 49728336
+file = "assets/run_072_lba_21143.bin"
+sha256 = "defe2affe158d92e2dbef03a8dff64bf3329944c8454213f652fb4be70ec3794"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 50264592
+file = "assets/run_073_lba_21371.bin"
+sha256 = "95dfea9b4b313a21ee4dd03ab0fd6b51997f54fd7f89d7985266c748580b45d3"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 51678144
+file = "assets/run_074_lba_21972.bin"
+sha256 = "5e4af4a1dda9b93e6fff6bb89fa13b25fc849cf6843a057cb4e4453bf8202c67"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 52402560
+file = "assets/run_075_lba_22280.bin"
+sha256 = "1f1b26d5e02480ee34939df48027158b1536c69ef391238b49e708da7490f636"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 52995264
+file = "assets/run_076_lba_22532.bin"
+sha256 = "1862ad1ba33854602bf5fbbe99daa88731810c24aae7a6637bbfad4c4093af07"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 53413920
+file = "assets/run_077_lba_22710.bin"
+sha256 = "6f52e4f638c2a8359150bc572d1ecac913bb90221197ae74b5f0ff0146bb7f98"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 54157152
+file = "assets/run_078_lba_23026.bin"
+sha256 = "e2c1f90829db616c981ad18a4902c7456585f2b3eded4c381c64d0d68ccc84c3"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 54726336
+file = "assets/run_079_lba_23268.bin"
+sha256 = "72304ffc06bf9f0b6a5205a069179c7b91f42233017b1cab942fe4cccc397a79"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 55436640
+file = "assets/run_080_lba_23570.bin"
+sha256 = "ac9b08ebd8758ea7010bf9ab08ec4ee8bd3fa62b39c1348c09e31ac890d3adff"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 56062272
+file = "assets/run_081_lba_23836.bin"
+sha256 = "6b7063fd358eaf73caa10c214f4dfbeb8491d464c7eea2736c04046c083beba3"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 57461712
+file = "assets/run_082_lba_24431.bin"
+sha256 = "aa0e0132a17125cf78445c13622765c28f88091ae358b97e347b6178d07236a1"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 58052064
+file = "assets/run_083_lba_24682.bin"
+sha256 = "5090ccf43ba288a416c15e1941ddb1d88dad68c7096d530e360421b0c7f0bbcb"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 58616544
+file = "assets/run_084_lba_24922.bin"
+sha256 = "158288b2f11528f4506c8a90e908f79265361d77797f0f3e03e34519750f6d0b"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 59547936
+file = "assets/run_085_lba_25318.bin"
+sha256 = "7807aff81ef7de175a8b1bb55ccf574845669fdf6a315f54bf2e59afc4e444a2"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 60552240
+file = "assets/run_086_lba_25745.bin"
+sha256 = "9da693841be26a10bf3e99b09e20605c2ecf5757108dbaa8b804b4b38f4fcca3"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 60970896
+file = "assets/run_087_lba_25923.bin"
+sha256 = "5a597e41d19e2a512a5fd3548ddc1e749ad53b705957ac197f3176bf78957819"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 61349568
+file = "assets/run_088_lba_26084.bin"
+sha256 = "5f81a5dbae8d01d213546840c7902a0c8269ef5fd7260513772e047a823b65d4"
+
+[[overlay]]
+feature = "indonesian-language"
+target = "disc_raw"
+offset = 62022240
+file = "assets/run_089_lba_26370.bin"
+sha256 = "e650017219c7c84b4dcb424a419bab7511eedd145f87d9f86851c287d852fff1"

@@ -1,0 +1,88 @@
+format_version = 7
+id = "legaia.vahn.blazingslash"
+version = "1.0.0"
+name = "Vahn Blazing Slash Cinematic Special"
+author = "Legaia Mod Project"
+description = "Restores Gi Delilas' Blazing Slash (Spell 0x79 / PROT 0958) for Vahn with 6-stage authentic camera choreographies."
+license = "MIT"
+resolver = "declarative"
+
+[[target]]
+game_id = "SCUS-94254"
+disc_sha256 = "e6120a5d70716dd2f026a2da32d0171d52651971b52c4347a68541299f75258c"
+
+[[feature]]
+id = "blazing-slash"
+name = "Blazing Slash for Vahn"
+description = "Enables Gi Delilas' Blazing Slash (50 AP, R D L D L) as a 6-stage cinematic magic spell for Vahn."
+default_enabled = true
+
+[[overlay]]
+feature = "blazing-slash"
+target = "disc_raw"
+offset = 77616
+file = "assets/run_000_lba_33.bin"
+sha256 = "1a416563425824aa6cb673be38348c4ddb40d3ecf46bda23de42464ebb882b9b"
+
+[[overlay]]
+feature = "blazing-slash"
+target = "disc_raw"
+offset = 378672
+file = "assets/run_001_lba_161.bin"
+sha256 = "d02ae1f7f184a44296c92a9c4cf1edd4fb82b7eb046d1d0e30bcf98b84ba2176"
+
+[[overlay]]
+feature = "blazing-slash"
+target = "disc_raw"
+offset = 543312
+file = "assets/run_002_lba_231.bin"
+sha256 = "5f7b3c91b420605cc2865f4671d2f260790df711c50b926469a279b25cc594c7"
+
+[[overlay]]
+feature = "blazing-slash"
+target = "disc_raw"
+offset = 559776
+file = "assets/run_003_lba_238.bin"
+sha256 = "9df6bda1452a42b8268268523100c3efab51705057a059393093eedc81294de6"
+
+[[overlay]]
+feature = "blazing-slash"
+target = "disc_raw"
+offset = 66688608
+file = "assets/run_004_lba_28354.bin"
+sha256 = "51302cdaf37f8c56a7acd2161152865558b1c6fca93f5ce27fc7e039a3f13c70"
+
+[[overlay]]
+feature = "blazing-slash"
+target = "disc_raw"
+offset = 68718384
+file = "assets/run_005_lba_29217.bin"
+sha256 = "ff27a3dc5c1e966f9a900f1a42f0ffa38a4d15d63cf8a3371dd40b77f4813d52"
+
+[[overlay]]
+feature = "blazing-slash"
+target = "disc_raw"
+offset = 111553008
+file = "assets/run_006_lba_47429.bin"
+sha256 = "865ad1530e39a08d965e06e3e49380843bb3867cfab602897ff8f705b6d4a3c5"
+
+[[overlay]]
+feature = "blazing-slash"
+target = "disc_raw"
+offset = 111557712
+file = "assets/run_007_lba_47431.bin"
+sha256 = "7f418ec0b0de8dc9cff23ef2bd1493e05751f36e3d94483d34387721fc8600a5"
+
+[[overlay]]
+feature = "blazing-slash"
+target = "disc_raw"
+offset = 111609456
+file = "assets/run_008_lba_47453.bin"
+sha256 = "54def631a9aa80e1f742026af677425277a53629f54d5cb46c0eb320f524bd24"
+
+[[overlay]]
+feature = "blazing-slash"
+target = "disc_raw"
+offset = 112437360
+file = "assets/run_009_lba_47805.bin"
+sha256 = "2fd56a88fc9a4c7ac163db2baafa4eb45582ee6eef1ab1e09a4642ca0a037be1"

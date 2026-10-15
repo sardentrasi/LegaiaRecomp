@@ -6,6 +6,7 @@
 /build-*/
 /out/
 /.happypath/
+/toolchain/
 
 # generated/ is COMMITTED: releases ship the compiled game, and CI builds it
 # from the game C in this repo (psxrecomp_cli.py generate, then git add

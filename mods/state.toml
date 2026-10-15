@@ -1,0 +1,11 @@
+format_version = 2
+
+[[feature]]
+package_id = "legaia.vahn.blazingslash"
+id = "blazing-slash"
+enabled = true
+
+[[feature]]
+package_id = "legaia.localization.indonesian"
+id = "indonesian-language"
+enabled = true
